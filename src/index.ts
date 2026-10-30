@@ -21,12 +21,15 @@ async function analyzeInquiry(text : string): Promise<AnalysisResult> {
 }
 
 async function main(): Promise<void> {
+    const apiKey = process.env.GEMINI_API_KEY;
+
+    if (!apiKey){
+        throw new Error("GEMENI_API_KEY가 설정되지 않았습니다.")
+    }
+
+    console.log("API 키 설정 확인 완료")
     console.log("분석 시작");
-
-    //TODO : analyseInquiry에 문의 문장을 전달하고,
-    //결과를 기다려 result 변수에 저장하기
     const result = await analyzeInquiry("다음 주로 예약을 변경하고 싶습니다.");
-
     console.log("분석 결과:", result);
     console.log("분석 종료");
 }
