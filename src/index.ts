@@ -1,3 +1,5 @@
+import { GoogleGenAI} from "@google/genai";
+
 type AnalysisResult = {
     category : string;
     summary : string;
@@ -24,13 +26,21 @@ async function main(): Promise<void> {
     const apiKey = process.env.GEMINI_API_KEY;
 
     if (!apiKey){
-        throw new Error("GEMENI_API_KEY가 설정되지 않았습니다.")
+        throw new Error("GEMINI_API_KEY가 설정되지 않았습니다.")
     }
 
+    const ai = new GoogleGenAI({apiKey});
+
+    const response = await ai.models.generateContent({
+        model: "gemini-3.5-flash-lite",
+        contents: "다음 문장을 한 문장으로 요약해줘 : 다음 주로 예약을 변경하고 싶습니다.",
+    });
+
+    console.log("LLM 응답:", response.text);
     console.log("API 키 설정 확인 완료")
-    console.log("분석 시작");
+    console.log("가짜분석 시작");
     const result = await analyzeInquiry("다음 주로 예약을 변경하고 싶습니다.");
-    console.log("분석 결과:", result);
+    console.log("가짜분석 결과:", result);
     console.log("분석 종료");
 }
 
