@@ -3,6 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 import { analyzeInquiry } from "./analyze-inquiry.js";
 import { evaluationCases } from "./evaluation-data.js";
 import type { AnalysisResult } from "./analysis.schema.js";
+import { ANALYSIS_CONFIG } from "./analysis.config.js";
 
 type EvaluationRecord = {
     id: string;
@@ -121,7 +122,8 @@ async function main(): Promise<void> {
         outputPath,
         JSON.stringify(
             {
-                recordFormatVersion: 2,
+                recordFormatVersion: 3,
+                analysisConfig : ANALYSIS_CONFIG,
                 summary,
                 records,
             },
