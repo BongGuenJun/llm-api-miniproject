@@ -1,0 +1,171 @@
+{
+  "summary": {
+    "total": 20,
+    "succeeded": 19,
+    "failed": 1,
+    "categoryCorrect": 19,
+    "actionCorrect": 19
+  },
+  "records": [
+    {
+      "id": "change-01",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 15759,
+      "error": null
+    },
+    {
+      "id": "cancel-01",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 29659,
+      "error": null
+    },
+    {
+      "id": "info-01",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 18836,
+      "error": null
+    },
+    {
+      "id": "other-01",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 24158,
+      "error": null
+    },
+    {
+      "id": "change-02",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 16638,
+      "error": null
+    },
+    {
+      "id": "cancel-02",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 12489,
+      "error": null
+    },
+    {
+      "id": "info-02",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 22759,
+      "error": null
+    },
+    {
+      "id": "other-02",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 34289,
+      "error": null
+    },
+    {
+      "id": "change-03",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 46835,
+      "error": null
+    },
+    {
+      "id": "change-04",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 33660,
+      "error": null
+    },
+    {
+      "id": "change-05",
+      "success": false,
+      "categoryCorrect": null,
+      "actionCorrect": null,
+      "elapsedMs": 2056,
+      "error": "{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}"
+    },
+    {
+      "id": "cancel-03",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 20352,
+      "error": null
+    },
+    {
+      "id": "cancel-04",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 51806,
+      "error": null
+    },
+    {
+      "id": "cancel-05",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 24820,
+      "error": null
+    },
+    {
+      "id": "info-03",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 27585,
+      "error": null
+    },
+    {
+      "id": "info-04",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 112344,
+      "error": null
+    },
+    {
+      "id": "info-05",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 18558,
+      "error": null
+    },
+    {
+      "id": "other-03",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 17316,
+      "error": null
+    },
+    {
+      "id": "other-04",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 36450,
+      "error": null
+    },
+    {
+      "id": "other-05",
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 20072,
+      "error": null
+    }
+  ]
+}
