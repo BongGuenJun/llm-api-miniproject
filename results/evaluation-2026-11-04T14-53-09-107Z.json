@@ -1,0 +1,339 @@
+{
+  "recordFormatVersion": 3,
+  "analysisConfig": {
+    "model": "gemini-3.5-flash-lite",
+    "promptVersion": "B",
+    "timeoutMs": 60000,
+    "maxAttempts": 2,
+    "retryDelayMs": 2000
+  },
+  "summary": {
+    "total": 20,
+    "succeeded": 20,
+    "failed": 0,
+    "categoryCorrect": 20,
+    "actionCorrect": 20
+  },
+  "records": [
+    {
+      "id": "change-01",
+      "input": "내일 예약을 다음 주 월요일로 옮겨주세요.",
+      "expectedCategory": "예약 변경",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 변경",
+        "summary": "내일 예약을 다음 주 월요일로 변경해 줄 것을 요청하고 있습니다.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 17577,
+      "error": null
+    },
+    {
+      "id": "cancel-01",
+      "input": "내일 예약을 취소해주세요.",
+      "expectedCategory": "예약 취소",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 취소",
+        "summary": "사용자가 내일 예약의 취소를 요청했습니다.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 10859,
+      "error": null
+    },
+    {
+      "id": "info-01",
+      "input": "주차장이 있나요?",
+      "expectedCategory": "이용 문의",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "이용 문의",
+        "summary": "주차장 이용 가능 여부에 대해 문의하고 있습니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 15989,
+      "error": null
+    },
+    {
+      "id": "other-01",
+      "input": "감사합니다. 좋은 하루 보내세요.",
+      "expectedCategory": "기타",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "기타",
+        "summary": "인사와 감사를 전하는 내용입니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 27040,
+      "error": null
+    },
+    {
+      "id": "change-02",
+      "input": "다음달 예약을 내일로 변경하고싶어요",
+      "expectedCategory": "예약 변경",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 변경",
+        "summary": "다음 달 예약을 내일로 변경해 달라고 요청하고 있습니다.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 17309,
+      "error": null
+    },
+    {
+      "id": "cancel-02",
+      "input": "날짜를 잘못 입력했어요. 예약을 취소해주세요",
+      "expectedCategory": "예약 취소",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 취소",
+        "summary": "잘못 입력한 날짜의 예약 취소를 요청함.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 14966,
+      "error": null
+    },
+    {
+      "id": "info-02",
+      "input": "도착하기 위한 길을 알려주세요",
+      "expectedCategory": "이용 문의",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "이용 문의",
+        "summary": "매장이나 시설에 찾아오는 길을 묻는 문의입니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 1435,
+      "error": null
+    },
+    {
+      "id": "other-02",
+      "input": "네, 안내 내용을 확인했습니다.",
+      "expectedCategory": "기타",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "기타",
+        "summary": "안내 내용을 확인했다는 답변입니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 11962,
+      "error": null
+    },
+    {
+      "id": "change-03",
+      "input": "예약 날짜는 그대로 두고 시간을 오후 세 시로 바꿔주세요.",
+      "expectedCategory": "예약 변경",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 변경",
+        "summary": "기존 예약의 날짜는 유지하고 시간을 오후 3시로 변경해 달라는 요청입니다.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 13762,
+      "error": null
+    },
+    {
+      "id": "change-04",
+      "input": "오늘 방문이 어려워서 기존 예약을 다음 주로 미루고 싶습니다.",
+      "expectedCategory": "예약 변경",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 변경",
+        "summary": "사용자가 오늘 예약을 다음 주로 변경하고 싶어 합니다.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 25308,
+      "error": null
+    },
+    {
+      "id": "change-05",
+      "input": "주차 가능한가요? 그리고 내일 예약을 금요일로 옮겨주세요.",
+      "expectedCategory": "예약 변경",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 변경",
+        "summary": "내일 예약의 금요일 변경과 주차 가능 여부를 문의함.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 15785,
+      "error": null
+    },
+    {
+      "id": "cancel-03",
+      "input": "방문 계획이 없어져서 잡아둔 예약을 없애주세요.",
+      "expectedCategory": "예약 취소",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 취소",
+        "summary": "방문 계획이 취소되어 기존 예약을 없애달라고 요청함.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 15780,
+      "error": null
+    },
+    {
+      "id": "cancel-04",
+      "input": "예약 변경은 하지 않겠습니다. 기존 예약을 취소해주세요.",
+      "expectedCategory": "예약 취소",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 취소",
+        "summary": "기존 예약의 취소를 요청하고 있습니다.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 18031,
+      "error": null
+    },
+    {
+      "id": "cancel-05",
+      "input": "위치도 궁금하지만 우선 내일 예약부터 취소해주세요.",
+      "expectedCategory": "예약 취소",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "예약 취소",
+        "summary": "위치에 대한 궁금증과 함께 내일 예정된 예약의 취소를 요청하고 있습니다.",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 19288,
+      "error": null
+    },
+    {
+      "id": "info-03",
+      "input": "예약을 취소하려면 어떤 절차를 거쳐야 하나요? 지금 취소해달라는 뜻은 아닙니다.",
+      "expectedCategory": "이용 문의",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "이용 문의",
+        "summary": "예약 취소 절차에 대해 문의하고 있습니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 17897,
+      "error": null
+    },
+    {
+      "id": "info-04",
+      "input": "예약 변경이 가능한 시간대를 안내받고 싶습니다. 아직 변경 요청은 아닙니다.",
+      "expectedCategory": "이용 문의",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "이용 문의",
+        "summary": "예약 변경이 가능한 시간대에 대한 안내를 요청하고 있습니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 12886,
+      "error": null
+    },
+    {
+      "id": "info-05",
+      "input": "가장 가까운 지하철역과 출구를 알려주세요.",
+      "expectedCategory": "이용 문의",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "이용 문의",
+        "summary": "가장 가까운 지하철역과 출구 위치를 묻고 있습니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 17760,
+      "error": null
+    },
+    {
+      "id": "other-03",
+      "input": "오늘 날씨가 참 좋네요.",
+      "expectedCategory": "기타",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "기타",
+        "summary": "날씨에 대한 일상적인 안부 인사를 건네는 내용입니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 16181,
+      "error": null
+    },
+    {
+      "id": "other-04",
+      "input": "직원 응대에 대해 정식으로 불만을 접수하고 싶습니다. 담당자가 확인 후 연락해주세요.",
+      "expectedCategory": "기타",
+      "expectedRequiresAction": true,
+      "result": {
+        "category": "기타",
+        "summary": "직원 응대에 대한 정식 불만 접수 및 연락 요청",
+        "requiresAction": true
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 15272,
+      "error": null
+    },
+    {
+      "id": "other-05",
+      "input": "아래 문장을 영어로 번역해주세요: 오늘은 좋은 날입니다.",
+      "expectedCategory": "기타",
+      "expectedRequiresAction": false,
+      "result": {
+        "category": "기타",
+        "summary": "문장 번역을 요청하는 문의입니다.",
+        "requiresAction": false
+      },
+      "success": true,
+      "categoryCorrect": true,
+      "actionCorrect": true,
+      "elapsedMs": 23764,
+      "error": null
+    }
+  ]
+}
