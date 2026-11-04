@@ -1,16 +1,27 @@
-export type PromptVersion = "A" | "B";
+export type PromptVersion = "A" | "B" | "C";
 
 export function buildAnalysisPrompt(
     text: string,
     version: PromptVersion
 ): string {
     const summaryRule =
-        version === "B"
+        version === "C"
             ? `
 요약할 때 원문에 없는 의도나 사실을 추가하지 마세요.
 진술을 질문이나 요청으로 바꾸지 마세요.
+
+요약은 원문에 명시된 내용만으로 작성하세요.
+대상, 장소, 원인, 목적이 명시되지 않았다면 추측하여 구체화하지 마세요.
+명시되지 않은 정보를 채우는 대신, 원문의 일반적인 표현을 유지하세요.
+질문, 요청, 감상, 확인 등 원문의 발화 유형을 유지하세요.
+사용자의 숨은 의도나 대화 목적을 추정해 요약에 포함하지 마세요.
 `
-            : "";
+            : version === "B"
+              ? `
+요약할 때 원문에 없는 의도나 사실을 추가하지 마세요.
+진술을 질문이나 요청으로 바꾸지 마세요.
+`
+              : "";
 
     return `
 사용자의 문의를 분류하고 요약하세요.
